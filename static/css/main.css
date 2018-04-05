@@ -142,7 +142,7 @@ h6{
 .navigation a{
     display:inline;
     font-size:1.6rem;
-    text-transform:uppercase;
+    text-transform:lowercase;
     line-height:6rem;
     letter-spacing:.1rem
 }
