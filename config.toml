@@ -1,3 +1,7 @@
-baseURL = "http://its.justhelmi.com/"
+baseURL = "https://its.justhelmi.com/"
 languageCode = "en-us"
 title = "it's just me"
+
+[params]
+  author = "Helmi"
+  info = "Web and App Developer"

@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html>
+{{ partial "header.html" . }}
 
-<head>
-    <title>{{ .Title }}</title>
-</head>
+  <main class="wrapper">
+    <div class="content">
+      <section class="container centered">
+        <div class="about">
+          <h1>{{ .Site.Params.author }}</h1>
+          <h2>{{ .Site.Params.info }}</h2>
+        </div>
+      </section>
+    </div>
+  </main>
 
-<body>
-    <p>coming soon</p>
-</body>
-
-</html>
+{{ partial "footer.html" . }}
