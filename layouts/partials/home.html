@@ -1,13 +1,11 @@
 <section class="container centered">
   <div class="about">
-    <h1>{{ .Site.Params.author }}</h1>
-    <h2>{{ .Site.Params.info }}</h2>
-    {{ with .Site.Params.social }}
+    <img class="avatar" src={{ "img/avatar.png" | absURL }}>
+    <h1 class="uppercase">{{ .Site.Params.author }}</h1>
     <ul>
-      {{ range sort . }}
-      <li><a href="{{ .url }}" target="_blank">@{{ .name }}</a></li>
+      {{ range sort .Site.Params.social }}
+      <li><a href="{{ .url }}" target="_blank" class="uppercase">@{{ .name }}</a></li>
       {{ end }}
     </ul>
-    {{ end }}
   </div>
 </section>

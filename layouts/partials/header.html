@@ -3,15 +3,12 @@
     <a class="navigation-title" href="{{ "/" | absURL }}">
       /home
     </a>
-    
-    {{ with .Site.Menus.main }}
     <ul class="navigation-list float-right">
-      {{ range sort . }}
+      {{ range sort .Site.Menus.main }}
       <li class="navigation-item">
-        <a class="navigation-link disable" href="{{ .URL }}">/{{ .Name }}</a>
+        <a class="navigation-link lowercase" href="{{ .URL }}">/{{ .Name }}</a>
       </li>
       {{ end }}
     </ul>
-    {{ end }}
   </section>
 </nav>

@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-    {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
-    {{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
+    <meta name="author" content="{{ .Site.Params.author }}">
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <meta name="keywords" content="{{ .Site.Params.keywords }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="{{ .Site.BaseURL }}">
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
@@ -23,6 +23,6 @@
       </div>
       {{ partial "footer.html" . }}
     </main>
-    {{ template "_internal/google_analytics.html" . }}
+    {{ template "_internal/google_analytics_async.html" . }}
   </body>
 </html>
