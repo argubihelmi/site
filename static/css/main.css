@@ -1,3 +1,9 @@
+:root {
+  --bg: #1d1f21;
+  --fg: #c5c8c6;
+  --link: #b5bd68;
+}
+
 *,*:after,*:before {
   box-sizing: inherit;
 }
@@ -9,8 +15,8 @@ html {
 
 body {
   display: flex;
-  color: #323232;
-  background-color: #fefefe;
+  color: var(--fg);
+  background-color: var(--bg);
   font-family: 'Source Code Pro', monospace;
   font-size: 1.6em;
   font-weight: 400;
@@ -27,7 +33,7 @@ body {
 
 a {
   font-weight: 700;
-  color: #323232;
+  color: var(--link);
   text-decoration: none;
 }
 
@@ -40,7 +46,7 @@ p {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  color: #323232;
+  color: var(--fg);
   letter-spacing: .0625em;
   margin: 3.2rem 0 1.6rem 0;
 }
@@ -117,13 +123,13 @@ pre {
 }
 
 code {
-  background-color: #323232;
-  color: #fefefe;
+  background-color: var(--fg);
+  color: var(--bg);
   padding: .4rem .8rem .4rem .8rem;
 }
 
 blockquote {
-  border-left: 2px solid #fefefe;
+  border-left: 2px solid var(--bg);
   padding-left: 1.6rem;
   font-style: italic;
 }
@@ -200,7 +206,7 @@ img {
 .content article header h2 {
   margin-top: 1rem;
   font-size: 1.8rem;
-  color: #323232;
+  color: var(--fg);
 }
 
 @media only screen and (min-device-width:320px) and (max-device-width:480px) {
@@ -274,6 +280,13 @@ img {
 
 .centered .about {
   text-align: center;
+  width: 30%;
+}
+
+@media only screen and (min-device-width:320px) and (max-device-width:480px) {
+  .centered .about {
+    width: 80%;
+  }
 }
 
 .centered .about h1 {
@@ -360,8 +373,8 @@ img {
 }
 
 .avatar {
-  width: 150px;
-  height: 150px;
+  width: 175px;
+  height: 175px;
 }
 
 .uppercase {
