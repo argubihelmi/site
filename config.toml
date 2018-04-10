@@ -2,6 +2,7 @@ baseURL = "https://its.justhelmi.com/"
 languageCode = "en-us"
 title = "it's just me"
 googleAnalytics = "UA-73862641-2"
+disqusShortname = "argubihelmi"
 
 [params]
   author = "Helmi"
