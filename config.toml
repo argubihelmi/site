@@ -3,6 +3,10 @@ languageCode = "en-us"
 title = "it's just me"
 googleAnalytics = "UA-73862641-2"
 disqusShortname = "argubihelmi"
+paginate = 20
+canonifyURLs = true
+pygmentsStyle = 'monokailight'
+pygmentsCodeFences = true
 
 [params]
   author = "Helmi"

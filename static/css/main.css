@@ -116,18 +116,6 @@ h6 {
   line-height: 1.4rem;
 }
 
-pre {
-  margin: 1.6rem 0 1rem 0;
-  padding: 1.6rem;
-  overflow-x: auto;
-}
-
-code {
-  background-color: var(--fg);
-  color: var(--bg);
-  padding: .4rem .8rem .4rem .8rem;
-}
-
 blockquote {
   border-left: 2px solid var(--bg);
   padding-left: 1.6rem;
